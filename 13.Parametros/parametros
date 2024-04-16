@@ -1,0 +1,29 @@
+console.log(' --- Parametros --- ');
+
+/*
+ - Parametros: los valores especificados en la función.
+ - Argumentos: los valores que le pasamos a la funcion cuando la invocamos.
+*/
+
+
+const saludo = (nombre = 'amigo') => {
+    console.log(`Hola ${nombre}!`);
+}
+
+saludo('Elías');
+saludo();
+
+/* 
+ Multiples parametos
+*/
+
+const operacion = (tipo,num1, num2) =>{
+    if(tipo === 'suma'){
+        console.log(`La suma es: ${num1 + num2}`);
+    }else if(tipo === 'resta'){
+        console.log(`La resta es: ${num1 - num2}`);
+    }
+}
+
+operacion('suma',10,5);
+operacion('resta',8,1);
