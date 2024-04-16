@@ -40,5 +40,47 @@ console.log(`Arreglo ordenado: ${numeros.sort()}`);
     .reverse()
     Nos permite ordenar un arreglo de forma descendente.
 */
+console.log(' --- .reverse() --- ');
+console.log(colores.reverse());
+console.log(`Arreglo: ${letras}`);
+console.log(`Arreglo ordenado de forma descendente: ${letras.reverse()}`);
+console.log(`Arreglo: ${numeros}`);
+console.log(`Arreglo ordenado de forma descendente: ${numeros.reverse()}`);
 
+/*
+    .concat()
+    Nos permite juntar dos arreglos en uno solo.
+*/
+console.log(' --- .concat() ---')
+const arreglo1 = [1,2,3];
+const arreglo2 = ['A','B','C'];
+console.log(`Arreglo 1: ${arreglo1}`);
+console.log(`Arreglo 2: ${arreglo2}`);
+const arreglo3 = arreglo1.concat(arreglo2);
+console.log(`Arreglos concatenados: ${arreglo3}`);
+
+/*
+    .push()
+    Nos permite agregar un elemento al final de un arreglo.
+*/
+console.log(' --- .push() ---')
+console.log(`Arreglo original: ${colores}`);
+colores.push('Amarillo');
+console.log(`Arrego con un elemento al final: ${colores}`);
+
+/*
+    .pop()
+    Nos permite eliminar el último elemento de un arreglo
+*/
+console.log(' --- .pop() ---');
+colores.pop();
+console.log(`Arreglo sin el último elemento: ${colores}`);
+
+/*
+    .shift()
+    Elimina el primer elemento de un arreglo 
+*/
+console.log(' --- .shift() --- ');
+colores.shift();
+console.log(`Arreglo sin el primer elemento: ${colores}`);
 
