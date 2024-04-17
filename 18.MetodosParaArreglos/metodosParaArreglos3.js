@@ -21,6 +21,19 @@ console.log(`Último index del elemento 'Rafael': ${ultimoIndex}`);
     Nos permite ejecutar una función por cada elemento.
 */
 console.log(' --- .forEach() --- ');
-nombres.forEach((nombre) => {
-    console.log(`Hola ${nombre}`);
+nombres.forEach((nombre, index) => {
+    console.log(`Hola ${nombre} (${index})`);
 });
+
+/*
+    .find()
+    Nos permite recorrer un arreglo y devuelve el PRIMER elemento que retornemos.
+*/
+console.log(' --- .find() --- ');
+const resultado = nombres.find((nombre) => {
+    // console.log(nombre[0])
+    if (nombre[0] === 'E'){
+        return (nombre);
+    }
+});
+console.log(resultado);
